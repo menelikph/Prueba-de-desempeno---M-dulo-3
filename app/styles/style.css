@@ -1,4 +1,9 @@
+/*
+style.css
+This file contains the main styles for the application, including layout, typography, and component styles.
+ */
 
+ /* Global Variables */
 :root {
     --primary-purple: #9f58f1b9; 
     --hover-purple: #602ba5;
@@ -16,8 +21,9 @@
     --sidebar-width: 280px;
 }
 
+/* Reset and Base Styles */
 *{
-    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho y alto */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
@@ -36,6 +42,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Main App Container */
 #app {
     background-color: var(--white);
     border-radius: 20px;
@@ -47,7 +54,7 @@ body {
     position: relative; 
 }
 
-
+/* Typography */
 h1, h2, h3 {
     color: var(--dark-text);
     margin-bottom: 15px;
@@ -69,6 +76,7 @@ h3 {
     line-height: 1.4;
 }
 
+/* Form Styles */
 .form-group {
     margin-bottom: 20px;
     text-align: left;
@@ -104,6 +112,9 @@ h3 {
     border-color: var(--primary-purple);
     box-shadow: 0 0 0 4px rgba(235, 81, 255, 0.2);
 }
+
+/* Button Styles */
+/* General button styles */
 
 .btn {
     margin-bottom: 20px;
@@ -179,7 +190,8 @@ h3 {
     transform: translateY(-2px);
 }
 
-
+/* Message Styles */
+/* General message styles */
 .message {
     margin-top: 20px;
     padding: 15px;
@@ -199,6 +211,8 @@ h3 {
     border: 1px solid #F5C6CB;
 }
 
+/* Link Styles */
+/* General link styles */
 a {
     color: var(--primary-purple);
     text-decoration: none;
@@ -209,6 +223,7 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Dashboard Styles */
 .dashboard-container {
     display: flex;
     flex-direction: column;
@@ -250,10 +265,10 @@ a:hover {
     background-color: #E2E8F0;
 }
 
-/* Tarjetas de eventos */
+/* events targets */
 .event-card {
-    width: 100%; /* Ajusta el ancho de las tarjetas */
-    max-width: 600px; /* Limita el ancho máximo para centrar mejor */
+    width: 100%;
+    max-width: 600px; 
     background-color: var(--white);
     border: 1px solid var(--border-light);
     border-radius: 16px;
@@ -291,10 +306,10 @@ a:hover {
     border-radius: 10px;
 }
 
-/* Estilos específicos para las vistas de Login/Register/NotFound para que se centren */
+/* Sidebar Styles */
 .login-container, .register-container, .not-found-container, .create-event-container, .edit-event-container {
-    max-width: 400px; /* Un poco más estrecho para formularios */
-    margin: 0 auto; /* Centrar en el main-content */
+    max-width: 400px; 
+    margin: 0 auto; 
     padding: 30px;
     border-radius: 16px;
     box-shadow: 0 5px 15px var(--shadow-color);
@@ -305,29 +320,29 @@ a:hover {
 }
 
 
-/* Responsividad para la barra lateral */
+/* Responsive Styles */
 @media (max-width: 900px) {
     .dashboard-container {
-        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+        margin-left: 0; 
         padding: 20px;
     }
 
     .event-card {
-        max-width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
+        max-width: 100%; 
     }
 
     #app-container {
-        flex-direction: column; /* La barra lateral se apila arriba */
+        flex-direction: column; 
     }
     #sidebar {
         width: 100%;
         min-width: 100%;
-        height: auto; /* Altura automática */
-        border-radius: 0; /* Sin bordes redondeados en la parte inferior */
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra inferior */
+        height: auto; 
+        border-radius: 0; 
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
         padding: 20px;
-        flex-direction: row; /* Elementos en fila */
-        flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+        flex-direction: row; 
+        flex-wrap: wrap; 
         justify-content: space-between;
         align-items: center;
     }
@@ -335,17 +350,17 @@ a:hover {
         margin-bottom: 0;
         font-size: 20px;
         text-align: left;
-        flex-grow: 1; /* Ocupa espacio */
+        flex-grow: 1; 
     }
     #sidebar-user-info {
-        display: none; /* Ocultar info de usuario en móvil para ahorrar espacio */
+        display: none; 
     }
     #sidebar-nav {
         width: 100%;
         margin-top: 15px;
     }
     #sidebar-nav ul {
-        flex-direction: row; /* Enlaces de navegación en fila */
+        flex-direction: row; 
         justify-content: center;
         gap: 10px;
         margin-bottom: 0;
@@ -358,9 +373,9 @@ a:hover {
         font-size: 14px;
     }
     #sidebar-logout-btn {
-        width: auto; /* Botón de logout más pequeño */
+        width: auto; 
         margin-top: 0;
-        margin-left: 15px; /* Espacio a la izquierda */
+        margin-left: 15px; 
     }
     #main-content {
         padding: 20px;
@@ -371,27 +386,27 @@ a:hover {
         max-width: 100%;
     }
     .login-container, .register-container, .not-found-container, .create-event-container, .edit-event-container {
-        max-width: 100%; /* Ocupar todo el ancho disponible en móvil */
+        max-width: 100%; 
         padding: 20px;
-        border-radius: 0; /* Sin bordes redondeados en móvil para ocupar todo el ancho */
-        box-shadow: none; /* Sin sombra en móvil para un look más "nativo" */
+        border-radius: 0; 
+        box-shadow: none; 
     }
 }
 
-/* Ajustes adicionales para pantallas muy pequeñas */
+
 @media (max-width: 480px) {
 
     .dashboard-container {
         padding: 10px;
-        gap: 15px; /* Reduce el espacio entre las tarjetas */
+        gap: 15px; 
     }
 
     .event-card {
-        padding: 15px; /* Reduce el padding de las tarjetas */
+        padding: 15px; 
     }
     
     #sidebar {
-        flex-direction: column; /* Título, nav y logout se apilan */
+        flex-direction: column; 
         align-items: flex-start;
     }
     #sidebar h2 {
@@ -400,7 +415,7 @@ a:hover {
         margin-bottom: 10px;
     }
     #sidebar-nav ul {
-        flex-wrap: wrap; /* Permitir que los enlaces de nav se envuelvan */
+        flex-wrap: wrap; 
         justify-content: center;
     }
     #sidebar-logout-btn {
