@@ -79,18 +79,3 @@ The application is fully responsive:
 - **Desktop**: The layout is optimized for larger screens with a fixed sidebar.
 - **Mobile**: The layout adjusts to smaller screens, ensuring usability.
 
-## License
-This project is licensed under the ISC License.
-
-## Author
-[Your Name]
-
-## Contributing
-Contributions are welcome! Feel free to fork the repository and submit pull requests.
-
-## Issues
-If you encounter any issues, please report them in the [Issues](https://github.com/your-repo/issues) section of the repository.
-
----
-
-Feel free to customize this README further based on your project specifics!
