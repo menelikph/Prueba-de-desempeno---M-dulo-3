@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "adminpassword",
+      "role": "administrador"
+    },
+    {
+      "id": "2",
+      "username": "visitante1",
+      "password": "pass123",
+      "role": "visitante"
+    },
+    {
+      "username": "many",
+      "password": "1234",
+      "role": "administrador",
+      "id": "WnOiWOV"
+    },
+    {
+      "username": "bris",
+      "password": "1234",
+      "role": "visitante",
+      "id": "HALNg97"
+    }
+  ],
+  "events": [
+    {
+      "id": "e1",
+      "name": "Conferencia de Tecnología 2025",
+      "date": "2025-09-15",
+      "description": "Un evento para explorar las últimas tendencias en IA y desarrollo web.",
+      "capacity": 100,
+      "registeredUsers": [
+        "2"
+      ]
+    },
+    {
+      "id": "e2",
+      "name": "Taller de JavaScript Avanzado",
+      "date": "2025-10-20",
+      "description": "Profundiza en conceptos avanzados de JS y patrones de diseño.",
+      "capacity": 20,
+      "registeredUsers": [
+        "2",
+        "HALNg97"
+      ]
+    },
+    {
+      "name": "js",
+      "date": "2025-07-17",
+      "description": "prueba",
+      "capacity": 10,
+      "registeredUsers": [
+        "HALNg97"
+      ],
+      "id": "m6wmteP"
+    }
+  ]
+}
